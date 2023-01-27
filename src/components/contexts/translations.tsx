@@ -1,8 +1,9 @@
+import LanguageContext from "./LanguageContext";
 
 
 export const initialLanguage: string = "en"
 
-export const translations =  {
+export const translations : any =  {
  es:{
  headerProduct: "Productos",
  headerPricing: "Precios",
@@ -51,7 +52,3 @@ export const translations =  {
  } 
 };
 
-module.exports = {
-translations,
-initialLanguage
-}

@@ -24,7 +24,7 @@ return (
    <h3>Blog</h3>         
   </nav>
   <div className="LangFlag">
-  <h3>{texts.pageLanguage}</h3>
+  <h3 className="headerLang">{texts.pageLanguage}</h3>
   <button className="flagButton" onClick={handleLanguage}><img className="flag" src={texts.flagURL} width="35" height="20" alt="" /></button>
   </div>
   <button className="createQuizz">{texts.headerButton}</button>
@@ -45,25 +45,14 @@ return (
     </div>
     <div className="inputInnerNest2">
      <label className="spLabel" htmlFor="language">{texts.questionsLanguage}</label>
-     <select className="lang" name="language" id="">
+     <select className="lang" name="language" id="" defaultValue="Spanish">
       <option value="es">Spanish</option>
-      <option value="en" selected>{texts.questionsLanguagePlaceholder}</option>
+      <option value="en">English</option>
      </select>
     </div>
    </div>
    <label htmlFor="long">{texts.choicesNumber}</label>
-    <select name="long" id="" className="long">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option> 
-   </select>
+    <input name="long" id="" className="long" placeholder="1"></input>
    <div className="inputNest">
    <div className="inputInnerNest3 marginRight">
     <label className="spLabel" htmlFor="difficulty">{texts.difficulty}</label>
