@@ -1,5 +1,5 @@
 import { HashRouter,Route, Routes } from "react-router-dom";
-import { LanguageIndex } from "../index/indexContext";
+import { LanguageIndex } from "../index/languageIndex/indexContext";
 
 
 function Router() {
